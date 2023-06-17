@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=“UTF-8”>
+<title>Cuestionario</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #F2F2F2; 
+color: #333; 
+}
+
+h1 {
+text-align: center;
+margin: 30px;
+}
+
+h2 {
+margin: 25px 0;
+font-size: 18px;
+color: #666; 
+}
+
+label {
+display: block;
+margin: 15px 0;
+cursor: pointer;
+font-size: 16px;
+color: #666; 
+}
+
+input[type=“radio”] {
+margin-right: 10px;
+}
+
+button {
+margin: 30px 0;
+padding: 15px 25px;
+background-color: #3399CC;
+color: #FFF;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+background-color: #77BA9B;
+}
+
+
+#result {
+background-color: #77BA9B;
+color: #FFF;
+padding: 20px;
+text-align: center;
+font-size: 16px;
+margin-top: 50px;
+border-radius: 5px;
+}
+
+.hide {
+display: none;
+}
+</style>
+</head>
+<body>
+<h1>Cuestionario de 5 preguntas</h1>
+<form id="quiz-form">
+<h2>1. ¿Cuál es la capital de España?</h2>
+<label><input type="radio" name="question1" value="madrid">Madrid</label><br>
+<label><input type="radio" name="question1" value="barcelona">Barcelona</label><br>
+
+<h2>2. ¿Cuál es el río más largo del mundo?</h2>
+<label><input type="radio" name="question2" value="nilo">Nilo</label><br>
+<label><input type="radio" name="question2" value="amazonas">Amazonas</label><br>
+
+<h2>3. ¿Cuál es la montaña más alta del mundo?</h2>
+<label><input type="radio" name="question3" value="everest">Everest</label><br>
+<label><input type="radio" name="question3" value="kilimanjaro">Kilimanjaro</label><br>
+
+<h2>4. ¿Cuál es el continente más grande?</h2>
+<label><input type="radio" name="question4" value="asia">Asia</label><br>
+<label><input type="radio" name="question4" value="africa">Africa</label><br>
+
+<h2>5. ¿Cuál es el animal terrestre más grande del mundo?</h2>
+<label><input type="radio" name="question5" value="elefante">Elefante</label><br>
+<label><input type="radio" name="question5" value="rinoceronte">Rinoceronte</label><br>
+
+<button type="button" onclick="checkAnswers()">Enviar respuestas</button>
+</form>
+
+<div id="result" class="hide"></div>
+
+<script src="quiz.js"></script>
+</body>
+</html>
