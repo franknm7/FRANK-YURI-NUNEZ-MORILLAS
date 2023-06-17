@@ -1,2 +1,2 @@
-# FRANK-NU-EZ-MORILLAS
+# FRANK-NUÑEZ-MORILLAS
 Presento un breve cuestionario con 5 alternativas de preguntas mostrando posteriormente el número de respuestas acertadas y equivocadas.
